@@ -1,4 +1,4 @@
-<h3>Comenzando con todo por favor no caigas xd gaa</h3>
+<h3>Creando una app de Angular PWA</h3>
 
 <div class="search">
   <mat-form-field>
@@ -9,6 +9,15 @@
       <mat-option value="morty">Morty</mat-option>
     </mat-select>
   </mat-form-field>
+
+  <button
+    (click)="installByUser()"
+    mat-stroked-button
+    color="primary"
+    *ngIf="installlEvent"
+  >
+    Install App
+  </button>
 </div>
 
 <router-outlet></router-outlet>
